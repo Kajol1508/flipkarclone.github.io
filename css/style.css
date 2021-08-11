@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+    --main-bg-color: #2874f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background: var(--main-bg-color);
+}
+body{
+    background: #d9e5f8;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+}
+nav ul li a:hover{
+    color: rgb(204, 204, 240);
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 10px 0 60px;
+    padding: 0 10px;
+}
+.slider{
+   width: 80vw;
+   margin: 12px auto;
+   overflow: hidden;
+
+}
+.card{
+    
+    max-width: 90vw;
+    margin: 40px auto;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.card h2{
+    font-family: 'Noto Serif', serif;
+}
+.card-item{
+    margin: auto;
+    width: 10vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+    font-family: 'Ubuntu', sans-serif;
+   
+
+}
+
+
+.container{
+    min-height: calc(100vh - 50px - 10vh);
+}
+
+footer{
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Noto Serif', serif;
+}
